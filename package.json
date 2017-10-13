@@ -1,0 +1,12 @@
+{
+  "name": "aliplayer-simple-demo",
+  "author": "muqin",
+  "license": "MIT",
+  "scripts": {
+    "dev": "gulp browser-sync"
+  },
+  "dependencies": {
+    "browser-sync": "^2.18.13",
+    "gulp": "^3.9.1"
+  }
+}
