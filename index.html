@@ -6,35 +6,22 @@
 <meta name="viewport"   content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"/>
 <title>Aliplayer简单Demo</title>
 <link rel="stylesheet" href="//g.alicdn.com/de/prismplayer/2.0.1/skins/default/aliplayer-min.css" />
-<script type="text/javascript" src="//g.alicdn.com/de/prismplayer/2.0.1/aliplayer-min.js"></script>
+<link rel="stylesheet" href="css/index.css" />
 </head>
 <body>
- <div  class="prism-player" id="J_prismPlayer" style="width:500px;height:400px;top:30px;margin: auto;"></div>
- <script>
-    var player = new Aliplayer({
-    id: "J_prismPlayer",
-         autoplay: true,
-         isLive:false,
-         playsinline:true,
-         width:"100%",
-         height:"100%",
-         controlBarVisibility:"click",
-         useH5Prism:false,
-         useFlashPrism:false,
-         source:"//player.alicdn.com/video/aliyunmedia.mp4",
-         cover:""                  
-    });
-    
-    player.on('ready',function(){
-      console.log('ready可以调用播放器的方法了');
-    });
-
-    player.on('play',function(){
-      console.log('开始播放(play)');
-    });
-
-    player.on('pause',function(){
-       console.log('暂停播放(pause)');
-     });
-  </script>
+ <div class="video-area">
+    <div class="video-filter">
+        <input class='source' type="text" placeholder="请输入vid或url"></input>
+        <input class="playauth" type="text" placeholder="请输入playauth"></input>
+        <button class='submit' value="">提交</button>
+        <button class='change'  value="">切换不同格式视频</button>
+    </div>
+    <div  class="prism-player video-container" id="J_prismPlayer"></div>
+ </div>
 </body>
+<script type="text/javascript" src="//g.alicdn.com/de/prismplayer/2.0.1/aliplayer-min.js"></script>
+<script type="text/javascript" src="lib/jquery.min.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script>
+
+</script>
