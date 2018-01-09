@@ -59,7 +59,7 @@ function createPlayer(source, playauth)
     var vid = source;
     if(!source && !playauth)
     {
-        source = '//player.alicdn.com/video/aliyunmedia.mp4';
+        source = '';
         vid = "";
         playauth = "";
     }
@@ -74,7 +74,7 @@ function createPlayer(source, playauth)
     var option = {
     id: "J_prismPlayer",
          autoplay: true,
-         isLive:false,
+         isLive:true,
          playsinline:true,
          width:"100%",
          height:"100%",
