@@ -74,7 +74,7 @@ function createPlayer(source, playauth)
     var option = {
     id: "J_prismPlayer",
          autoplay: true,
-         isLive:true,
+         isLive:false,
          playsinline:true,
          width:"100%",
          height:"100%",
